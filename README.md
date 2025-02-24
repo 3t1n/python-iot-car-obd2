@@ -35,6 +35,10 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr√
 ```python
 simulation_mode = True
 ```
+- Caso queira realmente buscar os dados do OBD2, mantenha a vari√°vel simulation_mode como false
+```python
+simulation_mode = False
+```
 
 ### 1. Configurar o Scanner OBD2
 
