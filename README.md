@@ -6,6 +6,8 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr�
 
 ## Arquitetura do Projeto
 
+![Diagrama da Arquitetura](imagens/arquitetura.png)
+
 - **Scanner OBD2**: Conectado à porta OBD2 do veículo.
 - **Script Python**: Captura as informações do módulo ELM via Bluetooth.
 - **Azure Event Hubs**: Recebe os dados em streaming.
