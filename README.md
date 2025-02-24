@@ -6,12 +6,12 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr�
 
 ## Arquitetura do Projeto
 
-- **Scanner OBD2**: Conectado à porta OBD2 do veículo (exemplo: Nissan Tiida).
+- **Scanner OBD2**: Conectado à porta OBD2 do veículo.
 - **Script Python**: Captura as informações do módulo ELM via Bluetooth.
 - **Azure Event Hubs**: Recebe os dados em streaming.
 - **Eventstream**: Fluxo de processamento de eventos no Data Fabric.
 - **Eventhouse**: Banco de dados de eventos para persistência dos dados.
-- **Dashboard em Tempo Real**: Consome os dados armazenados no Eventhouse para visualização.
+- **Dashboard do Power BI em Tempo Real**: Consome os dados armazenados no Eventhouse para visualização.
 
 ## Tecnologias Utilizadas
 
@@ -20,7 +20,7 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr�
 - **Azure Event Hubs**: Para transmissão dos dados.
 - **Eventstream (Data Fabric)**: Processamento dos eventos.
 - **Eventhouse**: Armazenamento dos dados.
-- **Dashboard em Tempo Real**: Visualização dos dados.
+- **Dashboard do Power BI em Tempo Real**: Visualização dos dados.
 
 ## Como Executar o Projeto
 
@@ -39,7 +39,7 @@ pip install pyobd pyserial azure-eventhub
 
 ### 3. Configurar o Script Python
 
-Edite o arquivo `obd2_palestra.py` para adicionar as credenciais do Azure Event Hubs:
+Edite o arquivo `obd2_monitoring.py` para adicionar as credenciais do Azure Event Hubs:
 
 ```python
 EVENT_HUB_CONNECTION_STRING = "sua_connection_string"
@@ -51,7 +51,7 @@ EVENT_HUB_NAME = "seu_event_hub"
 Execute o script para iniciar a coleta de dados:
 
 ```bash
-python obd2_palestra.py
+python obd2_monitoring.py
 ```
 
 Os dados serão coletados do veículo e enviados para o Azure Event Hubs.
@@ -63,7 +63,7 @@ Os dados serão coletados do veículo e enviados para o Azure Event Hubs.
 
 ### 6. Criar o Dashboard em Tempo Real
 
-- Utilize uma ferramenta como Power BI, Grafana ou outra para conectar ao Eventhouse e visualizar os dados em tempo real.
+- Utilize uma ferramenta como Power BI para se conectar ao Eventhouse e visualizar os dados em tempo real.
 
 ## Exemplo de Saída
 
