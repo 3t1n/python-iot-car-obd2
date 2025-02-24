@@ -24,6 +24,8 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr�
 - **Eventhouse**: Armazenamento dos dados.
 - **Dashboard do Power BI em Tempo Real**: Visualização dos dados.
 
+![Relatório em Funcionamento](imagens/demonstracao_projeto.png)
+
 ## Como Executar o Projeto
 
 ### 1. Configurar o Scanner OBD2
@@ -68,6 +70,8 @@ Os dados serão coletados do veículo e enviados para o Azure Event Hubs.
 - Utilize uma ferramenta como Power BI para se conectar ao Eventhouse e visualizar os dados em tempo real.
 
 ## Exemplo de Saída
+
+![Exemplo de Saída](imagens/gui.png)
 
 ```text
 RPM: 1196
