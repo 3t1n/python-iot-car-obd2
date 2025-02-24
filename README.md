@@ -28,6 +28,14 @@ Este projeto tem como objetivo capturar dados da ECU (Unidade de Controle Eletr�
 
 ## Como Executar o Projeto
 
+### 0. Caso queira somente testar sem um OBD2 conectado
+
+- Ative a opção True na variável simulation_mode
+- Com essa opção ativada, o script irá gerar os dados aleatóriamente, sem a necessidade de um OBD2 conectado.
+```python
+simulation_mode = True
+```
+
 ### 1. Configurar o Scanner OBD2
 
 - Conecte o dispositivo OBD2 na porta do veículo.
